@@ -1,5 +1,5 @@
 import React from 'react'
-import {ModeToggle} from '@/components/modal'
+// import {ModeToggle} from '@/components/modal'
 
 function Navbar() {
   return (
@@ -10,7 +10,7 @@ function Navbar() {
             <li>Projects</li>
             <li>Contact</li>
         </ul> */}
-        <ModeToggle />
+        {/* <ModeToggle /> */}
     </div>
   )
 }
