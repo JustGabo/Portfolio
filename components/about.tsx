@@ -8,7 +8,7 @@ function About() {
         {`Hellow there!`}
       </h1>
 
-      <h3 className="text-sm lg:text-base font-normal leading-6 w-full lg:w-[90%]">
+      <h3 className="text-sm lg:text-base text-gray-400 font-normal leading-6 w-full lg:w-[90%]">
         {`Passionate web developer on a mission to
         bring your digital dreams to life. In today's dynamic online landscape,
         a powerful web presence is essential. Whether you're an aspiring
