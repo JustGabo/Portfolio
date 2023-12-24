@@ -4,17 +4,19 @@ import Projects from "@/components/projects";
 
 function Page() {
   return (
-    <div
-      className="bg-[#111] text-white  px-4 py-8 lg:px-24 lg:py-20 
+    <main
+      className="bg-[#010101] text-white  px-4 py-8 lg:px-32  lg:py-20 
 "
     >
-     <div className="flex flex-col h-screen gap-40">
-     <Navbar />
-      <About />
-     </div>
+      <section className="flex flex-col h-screen gap-40">
+        <Navbar />
+        <article className="h-[60%] lg:h-auto flex items-center justify-center">
+          <About />
+        </article>
+      </section>
 
       <Projects />
-    </div>
+    </main>
   );
 }
 
