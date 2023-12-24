@@ -5,7 +5,8 @@
 // } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import Img from "next/image";
-import * as projects from "@/projects.json";
+// import * as projects from "@/projects.json";
+import projects from '@/projects.json'
 import Link from "next/link";
 
 function Projects() {
