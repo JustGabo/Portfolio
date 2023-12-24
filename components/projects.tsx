@@ -15,10 +15,12 @@ function Projects() {
 
       <section className="">
         <div className="grid gap-60">
-          {projects.Projects.map((project) => {
+          {projects.map((project,i) => {
             return (
-              <article className="flex flex-col items-center gap-10 p-2 lg:flex-row">
-                <img
+              <article key={i} className="flex flex-col items-center gap-10 p-2 lg:flex-row">
+                <Img
+                width={500}
+                height={500}
                   className="object-cover rounded-md lg:w-[65%] w-full border border-gray-600 "
                   src={project.img}
                   alt="principal image"
@@ -43,8 +45,8 @@ function Projects() {
                   </PopoverContent>
                 </Popover> */}
                     <ul className="flex flex-col gap-1 ml-4 text-xs list-disc lg:ml-4">
-                      {project.tecnologies.map((technology) => {
-                        return <li>{technology}</li>;
+                      {project.tecnologies.map((technology, i) => {
+                        return <li key={i}>{technology}</li>;
                       })}
                     </ul>
                     <div className="flex flex-col w-full gap-2">
