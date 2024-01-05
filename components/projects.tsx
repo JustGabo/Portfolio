@@ -15,17 +15,19 @@ function Projects() {
       <h2 className="text-4xl font-medium">Works</h2>
 
       <section className="">
-        <div className="grid gap-60">
+        <div className="grid gap-32 md:gap-60">
           {projects.map((project,i) => {
             return (
               <article key={i} className="flex flex-col items-center gap-10 p-2 lg:flex-row">
+                <Link className="lg:w-[65%] w-full" href={project.link}>
                 <Img
                 width={500}
                 height={500}
-                  className="object-cover rounded-md lg:w-[65%] w-full border border-gray-600 "
+                  className="object-cover rounded-md w-full border-[1.5px] border-neutral-700 "
                   src={project.img}
                   alt="principal image"
                 />
+                </Link>
                 <div className="lg:w-[40%] w-full flex flex-col gap-6">
                   <div className="flex flex-col gap-6">
                     <h3 className="text-xl font-semibold text-yellow-500">

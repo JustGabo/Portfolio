@@ -1,5 +1,13 @@
 [
   {
+    "img": "/spotify-clone.png",
+    "title": "Spotify Clone",
+    "description": "With a user-friendly interface and dynamic features, this Spotify-Clone brings the world of music to your fingertips.",
+    "tecnologies": ["Next.js", "Tailwind CSS", "TypeScript", "Supabase", "Stripe"],
+    "github": "https://github.com/JustGabo/spotify-clone",
+    "link": "https://spotify-clone-justgabo.vercel.app/"
+  },
+  {
     "img": "/jammyHero.png",
     "title": "Jammy",
     "description": "An app that allows you to create lyrics, chords, tabs, and the main melody of a song. You can also save your songs.",
