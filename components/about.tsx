@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Github, Mail } from "lucide-react";
 import Link from "next/link";
 
-function About() {
+export function About() {
   return (
+    <main className="h-[calc(100vh-30px)] lg:h-auto flex  items-center justify-centerss">
     <div className="flex flex-col lg:flex-row">
       <section className="flex flex-[100%] lg:flex-[60%] flex-col gap-3">
-        <h1 className="text-4xl font-bold  lg:text-2xl">
-          {/* {`Hello there!`} */}
+        <h1 className="text-4xl font-bold lg:text-2xl">
           Front-End Developer
         </h1>
 
@@ -20,7 +20,6 @@ function About() {
 
         <div className="flex items-center gap-3">
           <Button
-            //   href="/contact"
             className=" font-medium text-xs p-0 lg:text-sm   hover:bg-transparent  transition-all bg-transparent duration-500"
           >
             <Link href="mailto:ovallegabriel123@gmail.com">
@@ -34,10 +33,8 @@ function About() {
           </Button>
         </div>
       </section>
-
-      <section className="flex-[40%]"></section>
     </div>
+    </main>
   );
 }
 
-export default About;
