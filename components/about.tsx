@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Mail } from "lucide-react";
 import Link from "next/link";
 
-export function About() {
+ const About =()=> {
   return (
     <main className="h-[calc(100vh-30px)] lg:h-auto flex  items-center justify-centerss">
     <div className="flex flex-col lg:flex-row">
@@ -38,3 +38,4 @@ export function About() {
   );
 }
 
+export default About
