@@ -1,5 +1,6 @@
 import React from "react";
 import ContactSocialMedia from "./ContactSocialMedia";
+import Link from "next/link";
 
 const ContactContent = () => {
   return (
@@ -16,7 +17,10 @@ const ContactContent = () => {
         </p>
         <div className="flex ml-3 items-center gap-5 ">
           <span className="h-8 w-[1px] rotate-45 bg-yellow-500"></span>
-          <p className="text-white text-xs select-yellow">Let's talk</p>
+
+            <Link href="mailto:ovallegabriel123@gmail.com">
+              <p className="text-white text-xs select-yellow">Let's talk</p>
+            </Link>
         </div>
       </article>
       <ContactSocialMedia />

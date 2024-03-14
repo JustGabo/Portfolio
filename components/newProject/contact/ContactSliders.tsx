@@ -24,13 +24,13 @@ const ContactSliders = () => {
         xPercent: "-=100",
         opacity: 0,
         duration: 1,
-        delay: 1.1,
+        delay: 0.8,
       });
 
     gsap.to(".section-1", {
       xPercent: -100,
-      delay: 1.6,
-      duration: 1,
+      delay: 1.5,
+      duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
         start: "top top",
@@ -39,8 +39,8 @@ const ContactSliders = () => {
 
     gsap.to(".section-2", {
       xPercent: 100,
-      delay: 1.8,
-      duration: 1,
+      delay: 1.7,
+      duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
         start: "top top",
@@ -48,8 +48,8 @@ const ContactSliders = () => {
     });
     gsap.to(".section-3", {
       xPercent: "200",
-      delay: 2.1,
-      duration: 1,
+      delay: 2,
+      duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
         start: "top top",
@@ -57,8 +57,8 @@ const ContactSliders = () => {
     });
     gsap.to(".section-4", {
       yPercent: 100,
-      delay: 1.6,
-      duration: 1,
+      delay: 1.5,
+      duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
         start: "top top",
