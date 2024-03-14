@@ -5,4 +5,6 @@ export interface Project {
   technologies: string[];
   github: string;
   visit: string;
+  index: string;
+  subtitle: string
 }

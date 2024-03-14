@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+.select-yellow::selection{
+    color: #130101c7;
+    background: #EAB308;
+}

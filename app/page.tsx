@@ -1,20 +1,20 @@
-import Projects from "@/components/project/projects";
-import About from '@/components/about'
-import Navbar from '@/components/navbar'
+import Contact from "@/components/newProject/contact/Contact";
+import Hero from "@/components/newProject/hero/hero";
+import Project from "@/components/newProject/project/Project";
+import React from "react";
 
-function Page() {
+const Home = () => {
   return (
-    <main
-      className="bg-[#010101] text-white px-4 md:px-10 py-8 lg:px-32  lg:py-20 
-"
-    >
-      <section className="flex flex-col h-screen lg:gap-40">
-        <Navbar />
-        <About />
+    <div className="">
+      <section className="h-screen bg-[#130101]">
+        <Hero />
       </section>
-      <Projects />
-    </main>
+      <section className="overflow-hidden bg-gray-100">
+        <Project />
+        <Contact />
+      </section>
+    </div>
   );
-}
+};
 
-export default Page;
+export default Home;
