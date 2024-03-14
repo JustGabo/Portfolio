@@ -1,7 +1,8 @@
 [
   {
     "img": "/unitymap.png",
-    "title": "Unity Map",
+    "title": "Unity",
+    "subtitle": "Map",
     "description": "Users can manipulate images directly within the browser, allowing for real-time editing and collaboration. The platform offers a range of tools for image manipulation, such as cropping, resizing, adding filters, and more.",
     "technologies": [
       "Next.js",
@@ -13,11 +14,13 @@
       "Zustand"
     ],
     "github": "https://github.com/JustGabo/UnityMap",
-    "visit": "https://unity-map.vercel.app/"
+    "visit": "https://unity-map.vercel.app/",
+    "index": "1" 
   },
   {
-    "img": "/netflix.png",
-    "title": "Netflix Clone",
+    "img": "/shutter.png",
+    "title": "Netflix",
+    "subtitle": "Clone",
     "description": "Users can explore a wide variety of movies and TV shows, watch trailers, and sign up to create an account.",
     "technologies": [
       "Next.js",
@@ -27,11 +30,13 @@
       "Zustand"
     ],
     "github": "https://github.com/JustGabo/netflix",
-    "visit": "https://netflix-justgabo.vercel.app"
+    "visit": "https://netflix-justgabo.vercel.app",
+    "index": "2" 
   },
   {
     "img": "/spotify-clone.png",
-    "title": "Spotify Clone",
+    "title": "Spotify",
+    "subtitle": "Clone",
     "description": "With a user-friendly interface and dynamic features, this Spotify-Clone brings the world of music to your fingertips.",
     "technologies": [
       "Next.js",
@@ -41,38 +46,48 @@
       "Stripe"
     ],
     "github": "https://github.com/JustGabo/spotify-clone",
-    "visit": "https://spotify-clone-justgabo.vercel.app/"
+    "visit": "https://spotify-clone-justgabo.vercel.app/",
+    "index": "3" 
   },
   {
     "img": "/jammyHero.png",
     "title": "Jammy",
+    "subtitle": "App",
     "description": "An app that allows you to create lyrics, chords, tabs, and the main melody of a song. You can also save your songs.",
     "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
     "github": "",
-    "visit": "https://www.jammyapp.co/"
+    "visit": "https://www.jammyapp.co/",
+    "index": "4" 
   },
   {
     "img": "/Link2.png",
-    "title": "Link Sharing",
+    "title": "Link",
+    "subtitle": "Sharing",
     "description": "A personalized link sharing platform designed to streamline and simplify how you connect with others online.",
     "technologies": ["React", "Tailwind CSS", "TypeScript"],
     "github": "https://github.com/JustGabo/linksharing",
-    "visit": "https://linksharing-one.vercel.app/"
+    "visit": "https://linksharing-justgabo.vercel.app/",
+    "index": "5" 
   },
   {
     "img": "/stellarsales.png",
-    "title": "Stellar Sales",
+    "title": "Stellar",
+    "subtitle": "Sales",
     "description": " Explore a diverse range of categories, enjoy personalized recommendations, and effortlessly navigate through a sleek and modern design.",
     "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
     "github": "https://github.com/JustGabo/stellarSales",
-    "visit": "https://stellar-sales-oclfhuw1m-justgabo.vercel.app/"
+    "visit": "https://stellar-sales.vercel.app/",
+    "index": "6" 
   },
   {
     "img": "/socialhub.png",
-    "title": "SocialHub",
+    "title": "Social",
+    "subtitle": "Hub",
     "description": "A vibrant online community where creativity, connection, and expression converge. SocialHub brings people together, offering a dynamic space to share moments, stories, and inspiration.",
     "technologies": ["React", "Tailwind CSS", "TypeScript, Node.js"],
     "github": "https://github.com/JustGabo/socialhub",
-    "visit": "https://socialhub-six.vercel.app/"
+    "visit": "https://socialhub-justgabo.vercel.app/",
+    "index": "7" 
   }
 ]
+

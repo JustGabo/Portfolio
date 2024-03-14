@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import newProjects from "@/projectsNew.json";
+import newProjects from "@/projects.json";
 gsap.registerPlugin(ScrollTrigger);
 import ProjectCard from "./ProjectCard";
 const Project = () => {

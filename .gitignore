@@ -37,7 +37,3 @@ public
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-#projects info
-projects.json
-# projectsNew.json
