@@ -1,11 +1,14 @@
 "use client";
+import React, { useRef } from "react";
+import newProjects from "@/projects.json";
+import ProjectCard from "./ProjectCard";
+
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import newProjects from "@/projects.json";
 gsap.registerPlugin(ScrollTrigger);
-import ProjectCard from "./ProjectCard";
+
 const Project = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
