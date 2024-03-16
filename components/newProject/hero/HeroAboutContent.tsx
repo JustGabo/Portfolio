@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -9,7 +9,7 @@ const HeroAboutContent = () => {
     gsap.from("#welcome", {
       opacity: 0,
       duration: 0.5,
-      delay: 3.5,
+      delay: 3,
     });
   });
 
@@ -38,6 +38,14 @@ const HeroAboutContent = () => {
               <Github className="w-5 h-5 text-yellow-600 hover:text-yellow-700 transition-all" />
             </Link>
           </button>
+          {/* <button className="bg-transparent p-0 hover:bg-transparent">
+            <Link
+              href="https://www.linkedin.com/in/gabriel-sorianoo/"
+              target="_blank"
+            >
+              <Linkedin className="w-5 h-5 text-yellow-600 hover:text-yellow-700 transition-all" />
+            </Link>
+          </button> */}
         </div>
       </article>
     </section>

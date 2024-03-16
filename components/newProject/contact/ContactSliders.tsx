@@ -70,18 +70,19 @@ const ContactSliders = () => {
     ScrollTrigger.create({
       animation: smFooterTl,
       trigger: ".sm-footer",
-      start: "top 20",
+      start: "top center",
     });
 
     smFooterTl
       .from(".sm-footer-title", {
         opacity: 0,
-        y: "-=30",
+        x: "-=50",
+        delay: 0.5
       })
       .to(".sm-footer-title", {
         opacity: 0,
-        y: "+=30",
-        delay: 1,
+        x: "+=50",
+        delay: 0.8,
       })
       .to(".sm-footer", {
         xPercent: "-100",
@@ -107,9 +108,9 @@ const ContactSliders = () => {
         </article>
       </section>
 
-      <section className="h-screen flex lg:hidden sm-footer  p-5 bg-yellow-600  absolute top-0 left-0 z-10 w-full">
+      <section className="h-screen flex lg:hidden sm-footer  px-5 py-10  bg-yellow-600  absolute top-0 left-0 z-10 w-full">
         <article className="flex flex-col sm-footer-title h-full gap-10  justify-end   tracking-tight">
-          <h2 className="w-[90%] text-5xl   font-semibold">
+          <h2 className=" text-5xl   font-semibold">
             Thank you for viewing<span className="text-white  h-min">.</span>
           </h2>
         </article>
