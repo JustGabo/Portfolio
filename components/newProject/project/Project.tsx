@@ -37,9 +37,9 @@ const Project = () => {
     <div ref={triggerRef}>
       <div
         ref={sectionRef}
-        className="h-[100vh] w-[800vw] flex flex-row relative"
+        className="h-[100dvh] w-[800vw] flex flex-row relative"
       >
-        <div className=" h-[100vh] w-[100vw] flex items-center justify-center">
+        <div className=" h-[100dvh] w-[100vw] flex items-center justify-center">
           <p className="text-4xl font-semibold  flex items-center justify-center">
             Projects.
           </p>

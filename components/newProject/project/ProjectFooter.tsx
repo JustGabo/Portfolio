@@ -79,8 +79,8 @@ const ProjectFooter = () => {
       });
 
   return (
-    <article className="flex relative items-center justify-center h-[100vh]">
-      <div className="w-[100vw] absolute top-0 left-0 bg-[#130101]  z-0 h-[100vh] flex flex-col  justify-center">
+    <article className="flex relative items-center justify-center h-[100dvh]">
+      <div className="w-[100vw] absolute top-0 left-0 bg-[#130101]  z-0 h-[100dvh] flex flex-col  justify-center">
         <div className="w-[90%] m-auto px-32  pt-16 flex flex-col gap-5 bg-[#130101c7]">
           <h5 className="text-yellow-500 text-sm select-none ">Get in touch</h5>
           <h3 className="text-white select-yellow text-4xl font-medium w-[70%]">
@@ -109,12 +109,12 @@ const ProjectFooter = () => {
         </div>
       </div>
 
-      <div className="w-[100vw] absolute skills text-[#130101] z-10  top-0 left-0   h-[100vh] flex items-end p-2">
+      <div className="w-[100vw] absolute skills text-[#130101] z-10  top-0 left-0   h-[100dvh] flex items-end p-2">
         <h2 className="w-[55%] text-8xl   font-semibold">
           Thank you for viewing<span className="text-white  h-min">.</span>
         </h2>
       </div>
-      <div className="w-[100vw] flex flex-col h-[100vh] footer">
+      <div className="w-[100vw] flex flex-col h-[100dvh] footer">
         <section className="flex-1 flex">
           <div className="w-[30%]  section-1  bg-yellow-600 flex items-center justify-center"></div>
           <div className="flex-1 section-2 bg-yellow-600 flex items-center justify-center"></div>

@@ -24,18 +24,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
   return (
     <div
-      className={`h-[100vh] w-[100vw] flex items-center  p-5  border-l relative border-black justify-center ${
+      className={`h-[100dvh] w-[100vw] bg-[#130101] flex items-center  p-5  border-l relative border-black justify-center ${
         active[index] && "bg-[#130101] border-gray-50 transition  duration-200"
       }`}
     >
       <section
-        className={`w-[100vw] h-[100vh] opacity-0 grid lg:grid-cols-[40%,1fr] gap-10 ${
+        className={`w-[100vw] h-[100dvh]  grid lg:grid-cols-[40%,1fr] gap-10 ${
           active[index] &&
           "opacity-100 duration-500 transition-opacity delay-200"
         }`}
       >
-        <article className=" flex flex-col justify-center  items-center lg:p-20 p-10">
-          <div className="flex flex-col h-[55vh] lg:h-full">
+        <article className=" flex flex-col justify-center  items-center lg:p-16 p-10">
+          <div className="flex flex-col h-[55dvh] lg:h-full">
             <div className=" w-full h-auto flex  flex-col gap-3">
               <div>
                 <h2 className="font-bold lg:text-8xl text-7xl  text-white">
@@ -45,12 +45,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                   {project.subtitle}.
                 </h2>
               </div>
-              <span className="font-medium text-6xl lg:text-7xl text-yellow-500">
+              <span className="font-semibold text-6xl lg:text-7xl text-yellow-500">
                 0{project.index}
               </span>
             </div>
             <div className=" ml-auto flex-1 flex flex-col lg:w-[75%]  w-[75%] gap-3">
-              <p className="lg:text-xs  text-sm  text-balance text-gray-400">
+              <p className="lg:text-sm  text-sm  text-balance text-gray-400">
                 {project.description}
               </p>
               <ProjectRedirects project={project} />
@@ -79,7 +79,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           </div>
         </article>
       </section>
-      <section
+      {/* <section
         key={project.index}
         className={`w-full h-full flex items-center absolute z-10  justify-center ${
           active[index] && "-translate-y-[100vh] transition duration-500"
@@ -115,7 +115,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           <Mouse className="w-5 h-5" />
           <p className="text-sm">Click the title to see the project details</p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

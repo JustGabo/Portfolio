@@ -6,7 +6,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="">
-      <section className="h-screen bg-[#130101]">
+      <section className="h-[100dvh] bg-[#130101]">
         <Hero />
       </section>
       <section className="overflow-hidden bg-gray-100">

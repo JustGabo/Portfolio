@@ -92,12 +92,12 @@ const ContactSliders = () => {
 
   return (
     <>
-      <section className="w-[100vw] hidden  absolute skills text-[#130101] z-10  top-0 left-0   h-[100vh] lg:flex items-end p-2">
+      <section className="w-[100vw] hidden  absolute skills text-[#130101] z-10  top-0 left-0   h-[100dvh] lg:flex items-end p-2">
         <h2 className="w-[55%] text-8xl   font-semibold">
           Thank you for viewing<span className="text-white  h-min">.</span>
         </h2>
       </section>
-      <section className="w-[100vw] hidden  lg:flex flex-col h-[100vh] footer">
+      <section className="w-[100vw] hidden  lg:flex flex-col h-[100dvh] footer">
         <article className="flex-1 flex">
           <div className="w-[30%]  section-1  bg-yellow-600 flex items-center justify-center"></div>
           <div className="flex-1 section-2 bg-yellow-600 flex items-center justify-center"></div>
@@ -108,7 +108,7 @@ const ContactSliders = () => {
         </article>
       </section>
 
-      <section className="h-screen flex lg:hidden sm-footer  px-5 py-10  bg-yellow-600  absolute top-0 left-0 z-10 w-full">
+      <section className="h-[100dvh] flex lg:hidden sm-footer  px-5 py-10  bg-yellow-600  absolute top-0 left-0 z-10 w-full">
         <article className="flex flex-col sm-footer-title h-full gap-10  justify-end   tracking-tight">
           <h2 className=" text-5xl   font-semibold">
             Thank you for viewing<span className="text-white  h-min">.</span>

@@ -14,7 +14,7 @@ const HeroAboutContent = () => {
   });
 
   return (
-    <section className="h-[calc(100vh-100px)]   flex items-center justify-center">
+    <section className="h-[calc(100dvh-100px)]   flex items-center justify-center">
       <article className="flex    flex-col gap-3">
         <h1 className="text-3xl text-yellow-600 font-bold lg:text-2xl">
           Front-End Developer

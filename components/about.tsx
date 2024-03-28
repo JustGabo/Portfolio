@@ -4,7 +4,7 @@ import Link from "next/link";
 
  const About =()=> {
   return (
-    <main className="h-[calc(100vh-30px)] lg:h-auto flex  items-center justify-centerss">
+    <main className="h-[calc(100dvh-30px)] lg:h-auto flex  items-center justify-centerss">
     <div className="flex flex-col lg:flex-row">
       <section className="flex flex-[100%] lg:flex-[60%] flex-col gap-3">
         <h1 className="text-4xl font-bold lg:text-2xl">

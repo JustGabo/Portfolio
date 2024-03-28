@@ -1,5 +1,23 @@
 [
   {
+    "img": "/StayoApp.png",
+    "title": "Stayo",
+    "subtitle": "App",
+    "description": "This platform facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide. It offers features such as secure bookings, rent, and reviews to enhance the rental experience.",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Clerk",
+      "LiveBlocks",
+      "Convex",
+      "Zustand"
+    ],
+    "github": "https://github.com/JustGabo/UnityMap",
+    "visit": "https://github.com/JustGabo/Stayo",
+    "index": "1"
+  },
+  {
     "img": "/unitymap.png",
     "title": "Unity",
     "subtitle": "Map",
@@ -15,7 +33,7 @@
     ],
     "github": "https://github.com/JustGabo/UnityMap",
     "visit": "https://unity-map.vercel.app/",
-    "index": "1" 
+    "index": "2"
   },
   {
     "img": "/shutter.png",
@@ -31,7 +49,7 @@
     ],
     "github": "https://github.com/JustGabo/netflix",
     "visit": "https://netflix-justgabo.vercel.app",
-    "index": "2" 
+    "index": "3"
   },
   {
     "img": "/spotify-clone.png",
@@ -47,7 +65,7 @@
     ],
     "github": "https://github.com/JustGabo/spotify-clone",
     "visit": "https://spotify-clone-justgabo.vercel.app/",
-    "index": "3" 
+    "index": "4"
   },
   {
     "img": "/jammyHero.png",
@@ -57,7 +75,7 @@
     "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
     "github": "",
     "visit": "https://www.jammyapp.co/",
-    "index": "4" 
+    "index": "5"
   },
   {
     "img": "/Link2.png",
@@ -67,7 +85,7 @@
     "technologies": ["React", "Tailwind CSS", "TypeScript"],
     "github": "https://github.com/JustGabo/linksharing",
     "visit": "https://linksharing-justgabo.vercel.app/",
-    "index": "5" 
+    "index": "6"
   },
   {
     "img": "/stellarsales.png",
@@ -77,17 +95,7 @@
     "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
     "github": "https://github.com/JustGabo/stellarSales",
     "visit": "https://stellar-sales.vercel.app/",
-    "index": "6" 
-  },
-  {
-    "img": "/socialhub.png",
-    "title": "Social",
-    "subtitle": "Hub",
-    "description": "A vibrant online community where creativity, connection, and expression converge. SocialHub brings people together, offering a dynamic space to share moments, stories, and inspiration.",
-    "technologies": ["React", "Tailwind CSS", "TypeScript, Node.js"],
-    "github": "https://github.com/JustGabo/socialhub",
-    "visit": "https://socialhub-justgabo.vercel.app/",
-    "index": "7" 
+    "index": "7"
   }
 ]
 

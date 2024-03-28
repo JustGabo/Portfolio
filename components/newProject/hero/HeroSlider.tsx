@@ -27,7 +27,7 @@ const HeroSlider = () => {
   return (
     <section
       id="intro-slider"
-      className="h-screen flex   p-10 bg-gray-50 absolute top-0 left-0 z-10 w-full"
+      className="h-[100dvh] flex   p-10 bg-gray-50 absolute top-0 left-0 z-10 w-full"
     >
       <article className="flex flex-col h-full gap-10  justify-center   tracking-tight">
         <h2 id="title-1" className="lg:text-8xl text-5xl font-medium">
