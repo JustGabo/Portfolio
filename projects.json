@@ -1,23 +1,5 @@
 [
   {
-    "img": "/StayoApp.png",
-    "title": "Stayo",
-    "subtitle": "App",
-    "description": "This platform facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide. It offers features such as secure bookings, rent, and reviews to enhance the rental experience.",
-    "technologies": [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Clerk",
-      "LiveBlocks",
-      "Convex",
-      "Zustand"
-    ],
-    "github": "https://github.com/JustGabo/UnityMap",
-    "visit": "https://github.com/JustGabo/Stayo",
-    "index": "1"
-  },
-  {
     "img": "/unitymap.png",
     "title": "Unity",
     "subtitle": "Map",
@@ -33,8 +15,27 @@
     ],
     "github": "https://github.com/JustGabo/UnityMap",
     "visit": "https://unity-map.vercel.app/",
+    "index": "1"
+  },
+  {
+    "img": "/StayoApp.png",
+    "title": "Stayo",
+    "subtitle": "App",
+    "description": "This platform facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide. It offers features such as secure bookings, rent, and reviews to enhance the rental experience.",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Clerk",
+      "LiveBlocks",
+      "Convex",
+      "Zustand"
+    ],
+    "github": "https://github.com/JustGabo/Stayo",
+    "visit": "https://stayo-rose.vercel.app/",
     "index": "2"
   },
+
   {
     "img": "/shutter.png",
     "title": "Netflix",
@@ -98,4 +99,3 @@
     "index": "7"
   }
 ]
-
