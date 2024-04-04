@@ -29,28 +29,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       }`}
     >
       <section
-        className={`w-[100vw] h-[100dvh]  grid lg:grid-cols-[40%,1fr] gap-10 ${
+        className={`w-[100vw] h-[100dvh] items-center  grid lg:grid-cols-[40%,1fr] 2xl:grid-cols-[50%,1fr] gap-10 ${
           active[index] &&
           "opacity-100 duration-500 transition-opacity delay-200"
         }`}
       >
-        <article className=" flex flex-col justify-center  items-center lg:p-16 p-10">
+        <article className=" flex flex-col justify-center  items-center lg:py-14 lg:px-24 2xl:p-24 p-10">
           <div className="flex flex-col h-[55dvh] lg:h-full">
             <div className=" w-full h-auto flex  flex-col gap-3">
               <div>
-                <h2 className="font-bold lg:text-8xl text-7xl  text-white">
+                <h2 className="font-bold select-yellow lg:text-8xl 2xl:text-9xl text-7xl  text-white">
                   {project.title}
                 </h2>
-                <h2 className="font-bold  lg:text-8xl text-7xl  text-white">
-                  {project.subtitle}.
+                <h2 className="font-bold select-yellow lg:text-8xl text-7xl 2xl:text-9xl  text-white">
+                  {project.subtitle}<span className="text-yellow-600 select-none">.</span>
                 </h2>
               </div>
-              <span className="font-semibold text-6xl lg:text-7xl text-yellow-500">
+              <span className="font-semibold text-6xl 2xl:text-8xl lg:text-7xl text-yellow-600">
                 0{project.index}
               </span>
             </div>
-            <div className=" ml-auto flex-1 flex flex-col lg:w-[75%]  w-[75%] gap-3">
-              <p className="lg:text-sm  text-sm  text-balance text-gray-400">
+            <div className=" ml-auto flex-1 flex flex-col lg:w-[75%] md:w-[50%]  w-[75%] gap-3">
+              <p className="lg:text-sm 2xl:text-lg select-text text-sm  text-balance text-gray-400">
                 {project.description}
               </p>
               <ProjectRedirects project={project} />
@@ -60,19 +60,40 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         <article className=" lg:flex hidden  items-center justify-center w-full h-full ">
           {/* <Link className="h-[70%] m-auto" href={project.visit} target="_blank">
             <Img
-              width={700}
-              height={1000}
-              className="rounded-md aspect-video h-full object-fill w-full border-[1.5px] border-neutral-700 "
-              src={project.img}
+              width={500}
+              height={500}
+              className="rounded-md aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
+              src={'/tablet/StayoTablet2.png'}
               alt="Principal image"
             />
           </Link> */}
-          <div className="w-[50%] flex flex-col items-center justify-center aspect-square rounded-full bg-yellow-500">
+         {/* <div className="flex h-[80%] w-full gap-3">
+         <Link className="h-[75%] mb-auto" href={project.visit} target="_blank">
+            <Img
+              width={500}
+              height={500}
+              className="rounded-md aspect-square h-full  object-fill w-full border-[1.5px] border-neutral-700 "
+              src={'/tablet/StayoTablet2.png'}
+              alt="Principal image"
+            />
+          </Link>
+          <Link className="h-[75%] mt-auto" href={project.visit} target="_blank">
+            <Img
+              width={500}
+              height={500}
+              className="rounded-md aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
+              src={'/tablet/StayoTablet3.png'}
+              alt="Principal image"
+            />
+          </Link>
+         </div> */}
+         
+          <div className="w-[50%] flex flex-col select-none items-center justify-center aspect-square rounded-full bg-yellow-600">
             <div className="flex items-center">
-              <h2 className="text-8xl font-bold text-black ">
+              <h2 className="text-9xl font-bold text-black ">
                 {project.title.slice(0, 1)}
               </h2>
-              <h2 className="text-8xl font-bold text-black ">
+              <h2 className="text-9xl font-bold text-black ">
                 {project.subtitle.slice(0, 1)}
               </h2>
             </div>

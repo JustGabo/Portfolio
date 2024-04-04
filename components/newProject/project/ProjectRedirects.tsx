@@ -15,14 +15,14 @@ const ProjectRedirects:React.FC<ProjectRedirectsProps> = ({project}) => {
       <Hint label="View Website">
         <button className=" font-medium text-xs p-0 lg:text-sm   hover:bg-transparent  transition-all bg-transparent duration-500">
           <Link href={project.visit} target="_blank">
-            <LucideArrowUpRightSquare className="lg:w-5 lg:h-5 w-7 h-7 text-yellow-500 hover:text-yellow-700 transition-all" />
+            <LucideArrowUpRightSquare className="lg:w-5 lg:h-5 w-7 h-7  text-yellow-600 hover:text-yellow-700 transition-all" />
           </Link>
         </button>
       </Hint>
       <Hint label="View Code">
         <button className="bg-transparent p-0 hover:bg-transparent">
           <Link href={project.github} target="_blank">
-            <Github className="lg:w-5 lg:h-5 w-7 h-7 text-yellow-500 hover:text-yellow-700 transition-all" />
+            <Github className="lg:w-5 lg:h-5 w-7 h-7 text-yellow-600 hover:text-yellow-700 transition-all" />
           </Link>
         </button>
       </Hint>

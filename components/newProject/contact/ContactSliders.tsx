@@ -12,7 +12,7 @@ const ContactSliders = () => {
     ScrollTrigger.create({
       animation: footerTl,
       trigger: ".footer",
-      start: "top top",
+      start: "top 20%",
     });
 
     footerTl
@@ -33,7 +33,7 @@ const ContactSliders = () => {
       duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
-        start: "top top",
+        start: "top 20%",
       },
     });
 
@@ -43,7 +43,7 @@ const ContactSliders = () => {
       duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
-        start: "top top",
+        start: "top 20%",
       },
     });
     gsap.to(".section-3", {
@@ -52,7 +52,7 @@ const ContactSliders = () => {
       duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
-        start: "top top",
+        start: "top 20%",
       },
     });
     gsap.to(".section-4", {
@@ -61,7 +61,7 @@ const ContactSliders = () => {
       duration: 0.8,
       scrollTrigger: {
         trigger: ".footer",
-        start: "top top",
+        start: "top 20%",
       },
     });
 

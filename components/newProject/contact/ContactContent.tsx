@@ -11,7 +11,7 @@ const ContactContent = () => {
           There is no better time to hook-up with me and start your next project
           <span className="text-yellow-500 select-yellow">.</span>
         </h3>
-        <p className="text-gray-400 select-yellow text-xs w-[85%] lg:w-[60%] text-balance">
+        <p className="text-gray-400 select-text text-xs w-[85%] lg:w-[60%] text-balance">
           Now is the opportune moment to connect with me and embark on your next
           digital journey together.
         </p>
@@ -19,7 +19,7 @@ const ContactContent = () => {
           <span className="h-8 w-[1px] rotate-45 bg-yellow-500"></span>
 
             <Link href="mailto:ovallegabriel123@gmail.com">
-              <p className="text-white text-xs select-yellow">Let's talk</p>
+              <p className="text-white text-xs select-text underline underline-offset-2">Let's talk</p>
             </Link>
         </div>
       </article>

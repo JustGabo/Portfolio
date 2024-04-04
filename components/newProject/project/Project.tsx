@@ -34,16 +34,26 @@ const Project = () => {
   });
 
   return (
-    <div ref={triggerRef}>
-      <div
+    <main ref={triggerRef}>
+      <section
         ref={sectionRef}
         className="h-[100dvh] w-[800vw] flex flex-row relative"
       >
-        <div className=" h-[100dvh] w-[100vw] flex items-center justify-center">
-          <p className="text-4xl font-semibold  flex items-center justify-center">
-            Projects.
+        <article className=" h-[100dvh] bg-yellow-600 w-[100vw] flex items-end justify-start">
+          {/* <article className="flex justify-between h-[50dvh] items-center relative ">
+            <div className="w-[25dvw] flex gap-3  justify-end items-center">
+              <div className="h-[2px] rounded-full w-[30%] bg-white"></div>
+              <p className="text-sm font-semibold">Lorem ipsum.</p>
+            </div>
+          </article>
+          <article className="flex items-end gap-5">
+            <div className="w-[25dvw] h-[25dvh] bg-[#130101] div"></div>
+            <h1 className="text-5xl w-[40%] uppercase font-bold text-[#130101]">Personal Projects<span className="text-white">.</span></h1>
+          </article> */}
+          <p className="text-4xl lg:text-[200px] mb-[3%] uppercase font-bold  flex items-center justify-center">
+            Projects<span className="text-white">.</span>
           </p>
-        </div>
+        </article>
         {newProjects.map((project, i: number) => {
           const index = parseInt(project.index);
 
@@ -51,8 +61,8 @@ const Project = () => {
             <ProjectCard index={index} project={project} key={project.index} />
           );
         })}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
