@@ -50,7 +50,7 @@ const Project = () => {
             <div className="w-[25dvw] h-[25dvh] bg-[#130101] div"></div>
             <h1 className="text-5xl w-[40%] uppercase font-bold text-[#130101]">Personal Projects<span className="text-white">.</span></h1>
           </article> */}
-          <p className="text-4xl lg:text-[200px] mb-[3%] uppercase font-bold  flex items-center justify-center">
+          <p className="text-6xl lg:text-[200px] mb-[3%] uppercase font-bold  flex items-center justify-center">
             Projects<span className="text-white">.</span>
           </p>
         </article>
