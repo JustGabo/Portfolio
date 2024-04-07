@@ -14,7 +14,7 @@ const ProjectImg = ({project}: ProjectImgProps) => {
         width={500}
         height={500}
         className="object-cover rounded-md  w-full border-[1.5px] border-neutral-700 "
-        src={project.img}
+        src={project.img[0]}
         alt="Principal image"
       />
     </Link>

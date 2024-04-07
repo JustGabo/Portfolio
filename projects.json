@@ -1,6 +1,6 @@
 [
   {
-    "img": "/unitymap.png",
+    "img": ["/unitymap.png", "/unitymap.png", "/unitymap.png"],
     "title": "Unity",
     "subtitle": "Map",
     "description": "Users can manipulate images directly within the browser, allowing for real-time editing and collaboration. The platform offers a range of tools for image manipulation, such as cropping, resizing, adding filters, and more.",
@@ -18,7 +18,11 @@
     "index": "1"
   },
   {
-    "img": "/StayoApp.png",
+    "img": [
+      "/tablet/StayoTablet2.png",
+      "/StayoTablet3.png",
+      "/StayoTablet1.png"
+    ],
     "title": "Stayo",
     "subtitle": "App",
     "description": "This platform facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide. It offers features such as secure bookings, rent, and reviews to enhance the rental experience.",
@@ -37,7 +41,7 @@
   },
 
   {
-    "img": "/shutter.png",
+    "img": ["/shutter.png", "/shutter.png", "/shutter.png"],
     "title": "Netflix",
     "subtitle": "Clone",
     "description": "Users can explore a wide variety of movies and TV shows, watch trailers, and sign up to create an account.",
@@ -53,7 +57,7 @@
     "index": "3"
   },
   {
-    "img": "/spotify-clone.png",
+    "img": ["/shutter.png", "/shutter.png", "/shutter.png"],
     "title": "Spotify",
     "subtitle": "Clone",
     "description": "With a user-friendly interface and dynamic features, this Spotify-Clone brings the world of music to your fingertips.",
@@ -67,35 +71,5 @@
     "github": "https://github.com/JustGabo/spotify-clone",
     "visit": "https://spotify-clone-justgabo.vercel.app/",
     "index": "4"
-  },
-  {
-    "img": "/jammyHero.png",
-    "title": "Jammy",
-    "subtitle": "App",
-    "description": "An app that allows you to create lyrics, chords, tabs, and the main melody of a song. You can also save your songs.",
-    "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
-    "github": "",
-    "visit": "https://www.jammyapp.co/",
-    "index": "5"
-  },
-  {
-    "img": "/Link2.png",
-    "title": "Link",
-    "subtitle": "Sharing",
-    "description": "A personalized link sharing platform designed to streamline and simplify how you connect with others online.",
-    "technologies": ["React", "Tailwind CSS", "TypeScript"],
-    "github": "https://github.com/JustGabo/linksharing",
-    "visit": "https://linksharing-justgabo.vercel.app/",
-    "index": "6"
-  },
-  {
-    "img": "/stellarsales.png",
-    "title": "Stellar",
-    "subtitle": "Sales",
-    "description": " Explore a diverse range of categories, enjoy personalized recommendations, and effortlessly navigate through a sleek and modern design.",
-    "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
-    "github": "https://github.com/JustGabo/stellarSales",
-    "visit": "https://stellar-sales.vercel.app/",
-    "index": "7"
   }
 ]

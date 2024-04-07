@@ -9,14 +9,14 @@ const ContactSocialMedia = () => {
         <Link href="https://github.com/JustGabo" target="_blank">
           <p className="text-white text-xs select-text">Github</p>
         </Link>
-        <span className="h-[1px] w-7 bg-yellow-500 mt-[2px]"></span>
+        <span className="h-[1px] w-7 bg-yellow-600 mt-[2px]"></span>
         <Link
           href="https://www.linkedin.com/in/gabriel-sorianoo/"
           target="_blank"
         >
           <p className="text-white text-xs select-text">Linkedin</p>
         </Link>
-        <span className="h-[1px] w-7 bg-yellow-500 mt-[2px]"></span>
+        <span className="h-[1px] w-7 bg-yellow-600 mt-[2px]"></span>
         <Link href="https://twitter.com/ketchao_dev" target="_blank">
           <p className="text-white text-xs select-text">X</p>
         </Link>

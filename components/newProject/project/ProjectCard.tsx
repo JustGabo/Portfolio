@@ -5,6 +5,7 @@ import Img from "next/image";
 import { Project } from "@/types";
 import Link from "next/link";
 import ProjectRedirects from "./ProjectRedirects";
+import ProjectCardImgs from "./ProjectCardImgs";
 
 interface ProjectCardProps {
   project: Project;
@@ -42,7 +43,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                   {project.title}
                 </h2>
                 <h2 className="font-bold select-yellow lg:text-8xl text-7xl 2xl:text-9xl  text-white">
-                  {project.subtitle}<span className="text-yellow-600 select-none">.</span>
+                  {project.subtitle}
+                  <span className="text-yellow-600 select-none">.</span>
                 </h2>
               </div>
               <span className="font-semibold text-6xl 2xl:text-8xl lg:text-7xl text-yellow-600">
@@ -57,38 +59,35 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             </div>
           </div>
         </article>
-        <article className=" lg:flex hidden  items-center justify-center w-full h-full ">
-          {/* <Link className="h-[70%] m-auto" href={project.visit} target="_blank">
+        <article className="  lg:flex lg:flex-col poem lg:h-[60%] lg:overflow-y-auto   hidden  items-center justify-center w-full h-full ">
+        {/* {project.img.map((img)=>{
+            return (
+              <div className="w-[95%] h-full bg-red-50">
+             <Link className="h-full w-full  m-auto" href={project.visit} target="_blank">
             <Img
-              width={500}
-              height={500}
-              className="rounded-md aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
-              src={'/tablet/StayoTablet2.png'}
-              alt="Principal image"
-            />
-          </Link> */}
-         {/* <div className="flex h-[80%] w-full gap-3">
-         <Link className="h-[75%] mb-auto" href={project.visit} target="_blank">
-            <Img
-              width={500}
-              height={500}
-              className="rounded-md aspect-square h-full  object-fill w-full border-[1.5px] border-neutral-700 "
-              src={'/tablet/StayoTablet2.png'}
+              width={1000}
+              height={1000}
+              className=" aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
+              src={img}
               alt="Principal image"
             />
           </Link>
-          <Link className="h-[75%] mt-auto" href={project.visit} target="_blank">
+          </div>
+            )
+          })} */}          
+          {/* <div className="w-[80%] h-[75%] bg-red-50">
+             <Link className="h-full w-full  m-auto" href={project.visit} target="_blank">
             <Img
-              width={500}
-              height={500}
-              className="rounded-md aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
-              src={'/tablet/StayoTablet3.png'}
+              width={1000}
+              height={1000}
+              className=" aspect-square h-full object-fill w-full border-[1.5px] border-neutral-700 "
+              src={project.img}
               alt="Principal image"
             />
           </Link>
-         </div> */}
-         
-          <div className="w-[50%] flex flex-col select-none items-center justify-center aspect-square rounded-full bg-yellow-600">
+          </div> */}
+
+          <div className="w-[50%] flex flex-col select-none hover:bg-blue-500 transition-colors hover:$} duration-500 items-center justify-center aspect-square rounded-full bg-yellow-600">
             <div className="flex items-center">
               <h2 className="text-9xl font-bold text-black ">
                 {project.title.slice(0, 1)}

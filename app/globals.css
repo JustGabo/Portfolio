@@ -18,3 +18,9 @@
     clip-path: polygon(20% 0%, 87% 0, 100% 28%, 100% 80%, 100% 100%, 20% 100%, 0 100%, 0 0);
 
 }
+
+.poem {
+    scrollbar-color: rgb(135, 134, 134) rgb(192, 191, 191)  ;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+  }

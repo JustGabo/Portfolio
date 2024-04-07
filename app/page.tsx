@@ -1,7 +1,9 @@
+import Testing from "@/components/newProject/project/DesktopProjectCard";
 import Contact from "@/components/newProject/contact/Contact";
 import Hero from "@/components/newProject/hero/hero";
-import Project from "@/components/newProject/project/Project";
+import MobileProject from "@/components/newProject/project/MobileProject";
 import React from "react";
+import DesktopProject from '@/components/newProject/project/DesktopProject'
 
 const Home = () => {
   return (
@@ -10,8 +12,14 @@ const Home = () => {
         <Hero />
       </section>
       <section className="overflow-hidden bg-gray-100">
-        <Project />
+        <article className="w-full lg:hidden h-full">
+        <MobileProject />
+        </article>
+        <article className="w-full h-full ">
+          <DesktopProject/>
+        </article>
         <Contact />
+        {/* <Testing/> */}
       </section>
     </div>
   );
