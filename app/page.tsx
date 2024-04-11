@@ -1,4 +1,3 @@
-import Testing from "@/components/newProject/project/DesktopProjectCard";
 import Contact from "@/components/newProject/contact/Contact";
 import Hero from "@/components/newProject/hero/hero";
 import MobileProject from "@/components/newProject/project/MobileProject";
