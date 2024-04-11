@@ -15,11 +15,10 @@ const Home = () => {
         <article className="w-full lg:hidden h-full">
         <MobileProject />
         </article>
-        <article className="w-full h-full ">
+        <article className="w-full h-full hidden lg:block ">
           <DesktopProject/>
         </article>
         <Contact />
-        {/* <Testing/> */}
       </section>
     </div>
   );
