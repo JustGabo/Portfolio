@@ -1,5 +1,23 @@
 [
   {
+    "img": ["/shutter.png", "/shutter.png", "/shutter.png"],
+    "title": "Learny",
+    "subtitle": "App",
+    "description": "Our project is a versatile language learning platform featuring interactive exercises and progress tracking across multiple languages, providing users with an engaging and effective learning experience.",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Prisma",
+      "Zustand",
+      "React-admin",
+      "Clerk"
+    ],
+    "github": "https://github.com/JustGabo/learny",
+    "visit": "https://learny-orcin.vercel.app/",
+    "index": "1"
+  },
+  {
     "img": ["/unitymap.png", "/unitymap.png", "/unitymap.png"],
     "title": "Unity",
     "subtitle": "Map",
@@ -15,7 +33,7 @@
     ],
     "github": "https://github.com/JustGabo/UnityMap",
     "visit": "https://unity-map.vercel.app/",
-    "index": "1"
+    "index": "2"
   },
   {
     "img": [
@@ -37,14 +55,14 @@
     ],
     "github": "https://github.com/JustGabo/Stayo",
     "visit": "https://stayo-rose.vercel.app/",
-    "index": "2"
+    "index": "3"
   },
 
   {
     "img": ["/shutter.png", "/shutter.png", "/shutter.png"],
     "title": "Netflix",
     "subtitle": "Clone",
-    "description": "Users can explore a wide variety of movies and TV shows, watch trailers, and sign up to create an account.",
+    "description": "Explore a diverse collection of films with simple navigation and enjoy the magic of cinema from the convenience of your web browser.",
     "technologies": [
       "Next.js",
       "Tailwind CSS",
@@ -54,22 +72,7 @@
     ],
     "github": "https://github.com/JustGabo/netflix",
     "visit": "https://netflix-justgabo.vercel.app",
-    "index": "3"
-  },
-  {
-    "img": ["/shutter.png", "/shutter.png", "/shutter.png"],
-    "title": "Spotify",
-    "subtitle": "Clone",
-    "description": "With a user-friendly interface and dynamic features, this Spotify-Clone brings the world of music to your fingertips.",
-    "technologies": [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Supabase",
-      "Stripe"
-    ],
-    "github": "https://github.com/JustGabo/spotify-clone",
-    "visit": "https://spotify-clone-justgabo.vercel.app/",
     "index": "4"
   }
+  
 ]

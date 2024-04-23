@@ -17,7 +17,7 @@ const DesktopCard:React.FC<DesktopProjectCardProps> = ({projects}) => {
         <article className=" w-full pt-5   grid grid-cols-4 gap-16">
           {projects.map((project) => {
             return (
-              <div key={project.index} className="flex h-min  group flex-col">
+              <div key={project.index} className="flex h-auto relative pb-10   group flex-col">
                 <div className="  flex flex-col  gap-3 rounded-sm p-3">
                   <div className="relative">
                     <h2 className="font-bold  select-yellow lg:text-lg  text-white">
@@ -36,7 +36,7 @@ const DesktopCard:React.FC<DesktopProjectCardProps> = ({projects}) => {
                       {project.description}
                     </p>
                   </div>
-                  <span className="text-yellow-600 text-end text-lg font-semibold">
+                  <span className="text-yellow-600 absolute bottom-0 right-3 text-end text-lg font-semibold">
                     0{project.index}
                   </span>
                 </div>

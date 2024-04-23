@@ -8,8 +8,8 @@ const HeroAboutContent = () => {
   useGSAP(() => {
     gsap.from("#welcome", {
       opacity: 0,
-      duration: 0.5,
-      delay: 3,
+      duration: 0.7,
+      delay: 0.7,
     });
   });
 
