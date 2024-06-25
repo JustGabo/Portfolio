@@ -1,0 +1,81 @@
+[
+    {
+      "img": ["/learnyCel.png"],
+      "title": "Learny",
+      "subtitle": "App",
+      "description": "Web application dedicated to the languages learnning.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Prisma",
+        "Zustand",
+        "React-admin",
+        "Clerk"
+      ],
+      "github": "https://github.com/JustGabo/learny",
+      "visit": "https://learny-orcin.vercel.app/",
+      "index": "1",
+      "device": "phone"
+    },
+    {
+      "img": ["/unityPhone.png"],
+      "title": "Unity",
+      "subtitle": "Map",
+      "description": "Built an End-to-End web application ment to help the collaboration for teammates.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Clerk",
+        "LiveBlocks",
+        "Convex",
+        "Zustand"
+      ],
+      "github": "https://github.com/JustGabo/UnityMap",
+      "visit": "https://unity-map.vercel.app/",
+      "index": "2",
+      "device": "phone"
+    },
+    {
+      "img": [
+        "/stayoTablet.png"
+      ],
+      "title": "Stayo",
+      "subtitle": "App",
+      "description": "Web Application that facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Clerk",
+        "LiveBlocks",
+        "Convex",
+        "Zustand"
+      ],
+      "github": "https://github.com/JustGabo/Stayo",
+      "visit": "https://stayo-rose.vercel.app/",
+      "index": "3",
+      "device": "tablet"
+    },
+  
+    {
+      "img": ["/oneDayTablet.png"],
+      "title": "Netflix",
+      "subtitle": "Clone",
+      "description": "Proposed myself to build an End-to-End clone of this project with some changes on the UI.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Prisma",
+        "Zustand"
+      ],
+      "github": "https://github.com/JustGabo/netflix",
+      "visit": "https://netflix-justgabo.vercel.app",
+      "index": "4",
+      "device": "tablet"
+    }
+    
+  ]
+  

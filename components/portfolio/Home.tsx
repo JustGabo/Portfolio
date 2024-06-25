@@ -1,0 +1,192 @@
+"use client";
+import { Zap } from "lucide-react";
+import Image from "next/image";
+import React, { useState } from "react";
+import projects from "@/portfolio.json";
+import Link from "next/link";
+import Interaction from "@/components/interaction";
+import AboutCards from "@/components/portfolio/about/aboutCards";
+import ContactCard from "@/components/portfolio/contact/contactCard";
+import ProjectCard from "@/components/portfolio/projects/projectCard";
+
+const HomePage = () => {
+  const [state, setState] = useState("about");
+  const [active, setActive] = useState("about");
+  const [notHidden, setNotHidden] = useState("about");
+
+  return (
+    <main className="flex lg:flex-row flex-col lg:gap-10 gap-20 relative lg:px-10 px-5 py-16 ">
+      <section className="lg:w-[40%] w-full flex flex-col pb-10  lg:fixed gap-20  lg:h-screen ">
+        <header className="flex items-center selection:bg-yellow-500 selection:text-black">
+          <Zap strokeWidth={1.5} className="text-yellow-500  lg:w-4 lg:h-4" />
+          <p className="text-yellow-500 lg:text-[10px] uppercase font-medium">Ketchao</p>
+        </header>
+
+        <article className="flex flex-col lg:gap-5 gap-8">
+          <div className="flex flex-col ">
+            <h3 className="lg:text-xs text-sm  selection:text-yellow-500">
+              Gabriel Soriano.
+            </h3>
+            <h1 className="lg:text-xl text-2xl  text-yellow-500 selection:text-black selection:bg-yellow-500">
+              Web Developer.
+            </h1>
+          </div>
+          <p className="lg:text-xs text-sm text-neutral-600 lg:w-[70%] text-balance selection:text-yellow-500">
+            With more than 3 years of experience in this world, I'm still
+            learning new things daily and of course so deep in love with my job.
+          </p>
+        </article>
+
+        <article className="pb-10 hidden  items-end lg:flex w-full flex-1 content-end ">
+          <ul className="flex text-xs relative h-[25px] text-neutral-700   items-center ">
+            <li
+              onClick={() => {
+                setState("about");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("about");
+                }, 400);
+                setTimeout(() => {
+                  setActive("about");
+                }, 600);
+              }}
+              className="cursor-pointer w-20 text-center"
+            >
+              About
+            </li>
+            <li
+              onClick={() => {
+                setState("work");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("work");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("work");
+                }, 600);
+              }}
+              className="cursor-pointer w-16 text-center"
+            >
+              Work
+            </li>
+
+            <li
+              onClick={() => {
+                setState("contact");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("contact");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("contact");
+                }, 600);
+              }}
+              className="cursor-pointer w-24 text-center"
+            >
+              Contact
+            </li>
+
+            <div
+              className={`${state === "work" && "translate-x-[80px] w-16"} ${
+                state === "about" && "translate-x-0 w-20"
+              }  ${
+                state === "contact" && "translate-x-[144px] w-24"
+              } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
+            />
+          </ul>
+        </article>
+      </section>
+
+      <section className=" h-full lg:w-[50%]  w-full lg:ml-auto">
+        <article
+          className={`${notHidden === "about" ? "flex" : "hidden"} ${
+            active === "about" && "opacity-100"
+          } opacity-0  transition-all  duration-300`}
+        >
+          <AboutCards />
+        </article>
+        <article
+          className={`${notHidden === "work" ? "flex" : "hidden"}  ${
+            active === "work" && "opacity-100"
+          } opacity-0  transition-all  duration-300`}
+        >
+          <ProjectCard />
+        </article>
+        <article
+          className={` ${notHidden === "contact" ? "flex" : "hidden"} ${
+            active === "contact" && "opacity-100"
+          } opacity-0   transition-all duration-300`}
+        >
+          <ContactCard />
+        </article>
+      </section>
+
+
+
+      <article className="h-14 lg:hidden pb-2  justify-center bg-white z-50 flex items-center bottom-0 fixed w-[91%] mx-auto flex-1  ">
+          <ul className="flex text-sm relative   text-neutral-700 w-full  h-full  items-center ">
+            <li
+              onClick={() => {
+                setState("about");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("about");
+                }, 400);
+                setTimeout(() => {
+                  setActive("about");
+                }, 600);
+              }}
+              className="cursor-pointer w-full text-center bg-green-"
+            >
+              About
+            </li>
+            <li
+              onClick={() => {
+                setState("work");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("work");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("work");
+                }, 600);
+              }}
+              className="cursor-pointer w-full text-center bg-green-"
+            >
+              Work
+            </li>
+
+            <li
+              onClick={() => {
+                setState("contact");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("contact");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("contact");
+                }, 600);
+              }}
+              className="cursor-pointer w-full text-center bg-green-"
+            >
+              Contact
+            </li>
+
+            <div
+              className={`${state === "work" && "translate-x-[138px] w-28"} ${
+                state === "about" && "translate-x-0 w-32"
+              }  ${
+                state === "contact" && "translate-x-[260px] w-32"
+              } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
+            />
+          </ul>
+        </article>
+    </main>
+  );
+};
+
+export default HomePage;
