@@ -20,7 +20,7 @@ const ProjectCard = ({ showPreview }: Props) => {
             target="_blank"
             className="z-10 "
           >
-            <article className="flex  cursor-pointer flex-col gap-3 lg:h-screen h-[calc(100dvh-450px)] w-full">
+            <article className="flex  cursor-pointer flex-col gap-3 lg:h-screen h-[500px] w-full">
               <div className="flex items-center justify-between">
                 <p className="lg:text-xs text-sm font- text-neutral-500/80  selection:text-yellow-500">
                   <span className="text-black  selection:bg-yellow-500 selection:text-black text-base lg:text-sm mr-1">
@@ -32,7 +32,7 @@ const ProjectCard = ({ showPreview }: Props) => {
               <div className="bg-[#F6F6F6] p-10 group w-full rounded-xl relative flex items-center justify-center h-full">
                 <div
                   className={` ${
-                    project.device === "phone" ? "w-[35%]" : "w-[70%]"
+                    project.device === "phone" && "lg:w-[35%] w-[40%]"
                   } ${
                     project.device === "desktop" && "lg:w-[90%] w-[99%]"
                   } ${
