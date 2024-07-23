@@ -14,7 +14,7 @@ const ContactSocial = () => {
               Github
             </p>
           </Link>
-          <div className="w-10 h-[1px] bg-yellow-500 rounded-full" />
+          <div className="w-10 h-[1px] bg-neutral-400/80 rounded-full" />
           <Link
             href="https://www.linkedin.com/in/gabriel-sorianoo/"
             target="_blank"
@@ -23,8 +23,8 @@ const ContactSocial = () => {
               Linkedin
             </p>
           </Link>
-          <div className="w-10 h-[1px] bg-yellow-500 rounded-full" />
-          <Link href="https://twitter.com/ketchao_dev" target="_blank">
+          <div className="w-10 h-[1px] bg-neutral-400/80 rounded-full" />
+          <Link href="https://x.com/KetchaoDev" target="_blank">
             <p className=" text-xs text-neutral-800 transition-all duration-300 hover:text-neutral-400">
               X
             </p>

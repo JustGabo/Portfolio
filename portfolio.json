@@ -1,6 +1,6 @@
 [
     {
-      "img": ["/learnyCel.png"],
+      "img": ["/learnyFull.png"],
       "title": "Learny",
       "subtitle": "App",
       "description": "Web application dedicated to the languages learnning.",
@@ -16,7 +16,26 @@
       "github": "https://github.com/JustGabo/learny",
       "visit": "https://learny-orcin.vercel.app/",
       "index": "1",
-      "device": "phone"
+      "device": "desktop"
+    },
+    {
+      "img": ["/morphioPC.png"],
+      "title": "Morphio",
+      "subtitle": "Web",
+      "description": "Dedicated to simplify code conversions for developers across databases, styles, frameworks and more.",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Prisma",
+        "Zustand",
+        "React-admin",
+        "Clerk"
+      ],
+      "github": "https://github.com/JustGabo/Morphio",
+      "visit": "https://morphio-phi.vercel.app/",
+      "index": "2",
+      "device": "desktop"
     },
     {
       "img": ["/unityPhone.png"],
@@ -34,12 +53,12 @@
       ],
       "github": "https://github.com/JustGabo/UnityMap",
       "visit": "https://unity-map.vercel.app/",
-      "index": "2",
+      "index": "3",
       "device": "phone"
     },
     {
       "img": [
-        "/stayoTablet.png"
+        "/stayoFull.png"
       ],
       "title": "Stayo",
       "subtitle": "App",
@@ -55,8 +74,8 @@
       ],
       "github": "https://github.com/JustGabo/Stayo",
       "visit": "https://stayo-rose.vercel.app/",
-      "index": "3",
-      "device": "tablet"
+      "index": "4",
+      "device": "desktop"
     },
   
     {
@@ -72,8 +91,8 @@
         "Zustand"
       ],
       "github": "https://github.com/JustGabo/netflix",
-      "visit": "https://netflix-justgabo.vercel.app",
-      "index": "4",
+      "visit": "https://netflix-justgabo.vercel.app/  ",
+      "index": "5",
       "device": "tablet"
     }
     

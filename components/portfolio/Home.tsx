@@ -1,33 +1,68 @@
 "use client";
-import { Zap } from "lucide-react";
+import { ArrowUpRight, Zap } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import projects from "@/portfolio.json";
 import Link from "next/link";
 import Interaction from "@/components/interaction";
 import AboutCards from "@/components/portfolio/about/aboutCards";
 import ContactCard from "@/components/portfolio/contact/contactCard";
 import ProjectCard from "@/components/portfolio/projects/projectCard";
+import { setDefaultHighWaterMark } from "stream";
 
 const HomePage = () => {
-  const [state, setState] = useState("about");
-  const [active, setActive] = useState("about");
-  const [notHidden, setNotHidden] = useState("about");
+  const [state, setState] = useState("work");
+  const [active, setActive] = useState("work");
+  const [notHidden, setNotHidden] = useState("work");
+  const [position, setPosition] = useState({
+    x: 0,
+    y: 0,
+  });
+  const [showViewProject, setshowViewProject] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("mousemove", (event) => {
+      seeingPosition(event);
+    });
+
+    return window.removeEventListener("mousemove", seeingPosition);
+  }, []);
+
+  const seeingPosition = (event: MouseEvent) => {
+    setPosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
 
   return (
-    <main className="flex lg:flex-row flex-col lg:gap-10 gap-20 relative lg:px-10 px-5 py-16 ">
+    <main className="flex lg:flex-row flex-col lg:gap-10 gap-20  relative lg:px-10 px-5 py-16 ">
       <section className="lg:w-[40%] w-full flex flex-col pb-10  lg:fixed gap-20  lg:h-screen ">
         <header className="flex items-center selection:bg-yellow-500 selection:text-black">
-          <Zap strokeWidth={1.5} className="text-yellow-500  lg:w-4 lg:h-4" />
-          <p className="text-yellow-500 lg:text-[10px] uppercase font-medium">Ketchao</p>
+          <Zap strokeWidth={1.5} className="text-neutral-500  lg:w-4 lg:h-4" />
+          <p className="text-neutral-500 lg:text-[10px] uppercase font-semibold">
+            Ketchao
+          </p>
         </header>
+
+        {/* <div
+          style={{
+            top: `${position.y - 25}px`,
+            left: `${position.x + 25}px`,
+          }}
+          className={`${
+            showViewProject ? "flex" : "hidden"
+          } fixed z-50  items-center gap-1  bg-black transition-all cursor-none text-white px-5 py-3 rounded-full text-[11px]`}
+        >
+          <p>View Project</p> <ArrowUpRight className="w-4 h-4" />
+        </div> */}
 
         <article className="flex flex-col lg:gap-5 gap-8">
           <div className="flex flex-col ">
-            <h3 className="lg:text-xs text-sm  selection:text-yellow-500">
+            <h3 className="lg:text-xs text-sm   selection:text-yellow-500">
               Gabriel Soriano.
             </h3>
-            <h1 className="lg:text-xl text-2xl  text-yellow-500 selection:text-black selection:bg-yellow-500">
+            <h1 className="lg:text- text-sm  text-neutral-400 selection:text-black selection:bg-yellow-500">
               Web Developer.
             </h1>
           </div>
@@ -39,7 +74,7 @@ const HomePage = () => {
 
         <article className="pb-10 hidden  items-end lg:flex w-full flex-1 content-end ">
           <ul className="flex text-xs relative h-[25px] text-neutral-700   items-center ">
-            <li
+            {/* <li
               onClick={() => {
                 setState("about");
                 setActive("");
@@ -53,7 +88,7 @@ const HomePage = () => {
               className="cursor-pointer w-20 text-center"
             >
               About
-            </li>
+            </li> */}
             <li
               onClick={() => {
                 setState("work");
@@ -89,10 +124,8 @@ const HomePage = () => {
             </li>
 
             <div
-              className={`${state === "work" && "translate-x-[80px] w-16"} ${
-                state === "about" && "translate-x-0 w-20"
-              }  ${
-                state === "contact" && "translate-x-[144px] w-24"
+              className={`${state === "work" && "translate-x-[0px] w-16"} ${
+                state === "contact" && "translate-x-[64px] w-24"
               } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
             />
           </ul>
@@ -100,19 +133,21 @@ const HomePage = () => {
       </section>
 
       <section className=" h-full lg:w-[50%]  w-full lg:ml-auto">
-        <article
+        {/* <article
           className={`${notHidden === "about" ? "flex" : "hidden"} ${
             active === "about" && "opacity-100"
           } opacity-0  transition-all  duration-300`}
         >
           <AboutCards />
-        </article>
+        </article> */}
         <article
+        onMouseEnter={()=> setshowViewProject(true)}
+        onMouseLeave={()=> setshowViewProject(false)}
           className={`${notHidden === "work" ? "flex" : "hidden"}  ${
             active === "work" && "opacity-100"
-          } opacity-0  transition-all  duration-300`}
+          } opacity-0 cursor-pointer -z-50 transition-all  duration-300`}
         >
-          <ProjectCard />
+          <ProjectCard showPreview />
         </article>
         <article
           className={` ${notHidden === "contact" ? "flex" : "hidden"} ${
@@ -123,11 +158,9 @@ const HomePage = () => {
         </article>
       </section>
 
-
-
       <article className="h-14 lg:hidden pb-2  justify-center bg-white z-50 flex items-center bottom-0 fixed w-[91%] mx-auto flex-1  ">
-          <ul className="flex text-sm relative   text-neutral-700 w-full  h-full  items-center ">
-            <li
+        <ul className="flex text-sm relative   text-neutral-700 w-full  h-full  items-center ">
+          {/* <li
               onClick={() => {
                 setState("about");
                 setActive("");
@@ -141,52 +174,58 @@ const HomePage = () => {
               className="cursor-pointer w-full text-center bg-green-"
             >
               About
-            </li>
-            <li
-              onClick={() => {
-                setState("work");
-                setActive("");
-                setTimeout(() => {
-                  setNotHidden("work");
-                }, 400);
+            </li> */}
+          <li
+            onClick={() => {
+              setState("work");
+              setActive("");
+              setTimeout(() => {
+                setNotHidden("work");
+              }, 400);
 
-                setTimeout(() => {
-                  setActive("work");
-                }, 600);
-              }}
-              className="cursor-pointer w-full text-center bg-green-"
-            >
-              Work
-            </li>
+              setTimeout(() => {
+                setActive("work");
+              }, 600);
+            }}
+            className="cursor-pointer w-full  text-center bg-green-"
+          >
+            Work
+          </li>
 
-            <li
-              onClick={() => {
-                setState("contact");
-                setActive("");
-                setTimeout(() => {
-                  setNotHidden("contact");
-                }, 400);
+          <li
+            onClick={() => {
+              setState("contact");
+              setActive("");
+              setTimeout(() => {
+                setNotHidden("contact");
+              }, 400);
 
-                setTimeout(() => {
-                  setActive("contact");
-                }, 600);
-              }}
-              className="cursor-pointer w-full text-center bg-green-"
-            >
-              Contact
-            </li>
+              setTimeout(() => {
+                setActive("contact");
+              }, 600);
+            }}
+            className="cursor-pointer w-full text-center bg-green-"
+          >
+            Contact
+          </li>
 
-            <div
-              className={`${state === "work" && "translate-x-[138px] w-28"} ${
-                state === "about" && "translate-x-0 w-32"
-              }  ${
-                state === "contact" && "translate-x-[260px] w-32"
-              } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
-            />
-          </ul>
-        </article>
+          <div
+            className={`${state === "work" && "translate-x-[0px] w-[50%]"}   ${
+              state === "contact" && "translate-x-[100%] w-[50%]"
+            } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
+          />
+        </ul>
+      </article>
     </main>
   );
 };
 
 export default HomePage;
+
+// ${
+//   state === "about" && "translate-x-0 w-20"
+// }
+
+// ${
+//   state === "about" && "translate-x-0 w-32"
+// }
