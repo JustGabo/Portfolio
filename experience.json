@@ -1,0 +1,10 @@
+[
+    {
+        "index": 1,
+        "title": "Full Stack Developer",
+        "logo": "/experience/vidss.png",
+        "about": "Create wonderful videos within seconds. It has what you need to create catchy and engaging videos. In just a few clicks, you can have the perfect video for you product launch, marketing campaign, or anything else you can imagine.",
+        "role": "Responsible of the principal UI components, such as the Audio section and the Canvas section. Also in charge of the Database and Audio integration. Integrated audio features using Remotion, including an audio library sourced from a S3 bucket.",
+        "visit": "https://www.vidss.app/"
+    }
+]

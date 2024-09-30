@@ -8,3 +8,12 @@ export interface Project {
   index: string;
   subtitle: string
 }
+
+export interface Experience {
+  index: number
+  title: string
+  logo: string;
+  about: string
+  role: string
+  visit: string
+}

@@ -9,6 +9,7 @@ import AboutCards from "@/components/portfolio/about/aboutCards";
 import ContactCard from "@/components/portfolio/contact/contactCard";
 import ProjectCard from "@/components/portfolio/projects/projectCard";
 import { setDefaultHighWaterMark } from "stream";
+import ExperienceCard from "./experience/experienceCard";
 
 const HomePage = () => {
   const [state, setState] = useState("work");
@@ -57,7 +58,8 @@ const HomePage = () => {
           <p>View Project</p> <ArrowUpRight className="w-4 h-4" />
         </div> */}
 
-        <article className="flex flex-col lg:gap-5 gap-8">
+        <article className="flex flex-col gap-5">
+          <div className="flex flex-col lg:gap-5 gap-8">
           <div className="flex flex-col ">
             <h3 className="lg:text-xs text-sm   selection:text-yellow-500">
               Gabriel Soriano.
@@ -66,14 +68,17 @@ const HomePage = () => {
               Web Developer.
             </h1>
           </div>
-          <p className="lg:text-xs text-sm text-neutral-600 lg:w-[70%] text-balance selection:text-yellow-500">
-            With more than 3 years of experience in this world, I'm still
+          <p className="lg:text-xs text-sm  text-neutral-600 lg:w-[70%] text-balance selection:text-yellow-500">
+            With more than 4 years of experience in this world, I'm still
             learning new things daily and of course so deep in love with my job.
           </p>
+          </div>
+
+          <p className="lg:text-xs text-neutral-400 font-medium">Working at <Link className="text-black" href={"https://www.vidss.app/"} target="_blank">Vidss.app</Link></p>
         </article>
 
         <article className="pb-10 hidden  items-end lg:flex w-full flex-1 content-end ">
-          <ul className="flex text-xs relative h-[25px] text-neutral-700   items-center ">
+          <ul className="flex  text-xs relative h-[25px] text-neutral-700   items-center ">
             {/* <li
               onClick={() => {
                 setState("about");
@@ -108,6 +113,23 @@ const HomePage = () => {
 
             <li
               onClick={() => {
+                setState("experience");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("experience");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("experience");
+                }, 600);
+              }}
+              className="cursor-pointer w-16 text-center"
+            >
+              Experience
+            </li>
+
+            <li
+              onClick={() => {
                 setState("contact");
                 setActive("");
                 setTimeout(() => {
@@ -124,8 +146,10 @@ const HomePage = () => {
             </li>
 
             <div
-              className={`${state === "work" && "translate-x-[0px] w-16"} ${
-                state === "contact" && "translate-x-[64px] w-24"
+              className={`${state === "work" && "translate-x-[0px] w-16"}
+              ${state === "experience" && "translate-x-[58px] w-20"}
+              ${
+                state === "contact" && "translate-x-[135px] w-20"
               } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
             />
           </ul>
@@ -140,14 +164,22 @@ const HomePage = () => {
         >
           <AboutCards />
         </article> */}
+
         <article
-        onMouseEnter={()=> setshowViewProject(true)}
-        onMouseLeave={()=> setshowViewProject(false)}
+          onMouseEnter={() => setshowViewProject(true)}
+          onMouseLeave={() => setshowViewProject(false)}
           className={`${notHidden === "work" ? "flex" : "hidden"}  ${
             active === "work" && "opacity-100"
           } opacity-0 cursor-pointer -z-50 transition-all  duration-300`}
         >
           <ProjectCard showPreview />
+        </article>
+        <article
+          className={`${notHidden === "experience" ? "flex" : "hidden"} ${
+            active === "experience" && "opacity-100"
+          } opacity-0  transition-all  duration-300`}
+        >
+          <ExperienceCard />
         </article>
         <article
           className={` ${notHidden === "contact" ? "flex" : "hidden"} ${
@@ -194,6 +226,23 @@ const HomePage = () => {
 
           <li
             onClick={() => {
+              setState("experience");
+              setActive("");
+              setTimeout(() => {
+                setNotHidden("experience");
+              }, 400);
+
+              setTimeout(() => {
+                setActive("experience");
+              }, 600);
+            }}
+            className="cursor-pointer w-full  text-center bg-green-"
+          >
+            Experience
+          </li>
+
+          <li
+            onClick={() => {
               setState("contact");
               setActive("");
               setTimeout(() => {
@@ -210,8 +259,10 @@ const HomePage = () => {
           </li>
 
           <div
-            className={`${state === "work" && "translate-x-[0px] w-[50%]"}   ${
-              state === "contact" && "translate-x-[100%] w-[50%]"
+            className={`${state === "work" && "translate-x-[0px] w-[140px]"} 
+              ${state === "experience" && "translate-x-[120px] w-[150px]"}
+            ${
+              state === "contact" && "translate-x-[270px] w-[120px]"
             } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
           />
         </ul>
