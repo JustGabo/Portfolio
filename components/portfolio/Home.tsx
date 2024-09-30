@@ -9,6 +9,7 @@ import AboutCards from "@/components/portfolio/about/aboutCards";
 import ContactCard from "@/components/portfolio/contact/contactCard";
 import ProjectCard from "@/components/portfolio/projects/projectCard";
 import { setDefaultHighWaterMark } from "stream";
+import { ExternalLink } from "lucide-react";
 
 const HomePage = () => {
   const [state, setState] = useState("work");
@@ -67,9 +68,25 @@ const HomePage = () => {
             </h1>
           </div>
           <p className="lg:text-xs text-sm text-neutral-600 lg:w-[70%] text-balance selection:text-yellow-500">
-            With more than 3 years of experience in this world, I'm still
+            With more than 4 years of experience in this world, I'm still
             learning new things daily and of course so deep in love with my job.
           </p>
+
+          <div className="flex lg:text-xs font-medium gap-1 items-center">
+            <p className=" text-neutral-400">Working at </p>
+            <div className="flex items-center overflow-y-hidden group gap-1">
+              <Link
+                href={"https://vidss.app/"}
+                target="_blank"
+                className="text-black"
+              >
+                Vidss.app
+              </Link>
+              <Link target="_blank" href={"https://vidss.app/"}>
+                <ExternalLink className="opacity-0 translate-y-5 w-3 h-3 text-black group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 ease-out" />
+              </Link>
+            </div>
+          </div>
         </article>
 
         <article className="pb-10 hidden  items-end lg:flex w-full flex-1 content-end ">
@@ -141,8 +158,8 @@ const HomePage = () => {
           <AboutCards />
         </article> */}
         <article
-        onMouseEnter={()=> setshowViewProject(true)}
-        onMouseLeave={()=> setshowViewProject(false)}
+          onMouseEnter={() => setshowViewProject(true)}
+          onMouseLeave={() => setshowViewProject(false)}
           className={`${notHidden === "work" ? "flex" : "hidden"}  ${
             active === "work" && "opacity-100"
           } opacity-0 cursor-pointer -z-50 transition-all  duration-300`}
