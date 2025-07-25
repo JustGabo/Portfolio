@@ -1,4 +1,4 @@
-import Interaction from "@/components/interaction";
+import Interaction from "@/components/portfolio/experiments/interaction";
 import React from "react";
 
 const AboutInteractions = () => {

@@ -2,14 +2,14 @@
 import { ArrowUpRight, Zap } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import projects from "@/portfolio.json";
 import Link from "next/link";
-import Interaction from "@/components/interaction";
+import Interaction from "@/components/portfolio/experiments/interaction";
 import AboutCards from "@/components/portfolio/about/aboutCards";
 import ContactCard from "@/components/portfolio/contact/contactCard";
 import ProjectCard from "@/components/portfolio/projects/projectCard";
 import { setDefaultHighWaterMark } from "stream";
 import { ExternalLink } from "lucide-react";
+import ExperimentsCard from "./experiments/experimentsCard";
 
 const HomePage = () => {
   const [state, setState] = useState("work");
@@ -45,19 +45,6 @@ const HomePage = () => {
             Ketchao
           </p>
         </header>
-
-        {/* <div
-          style={{
-            top: `${position.y - 25}px`,
-            left: `${position.x + 25}px`,
-          }}
-          className={`${
-            showViewProject ? "flex" : "hidden"
-          } fixed z-50  items-center gap-1  bg-black transition-all cursor-none text-white px-5 py-3 rounded-full text-[11px]`}
-        >
-          <p>View Project</p> <ArrowUpRight className="w-4 h-4" />
-        </div> */}
-
         <article className="flex flex-col lg:gap-5 gap-8">
           <div className="flex flex-col ">
             <h3 className="lg:text-xs text-sm   selection:text-yellow-500">
@@ -89,23 +76,8 @@ const HomePage = () => {
           </div>
         </article>
 
-        <article className="pb-10 hidden  items-end lg:flex w-full flex-1 content-end ">
+        <article className="pb-10 hidden  items-end lg:flex w-full flex-1  content-end ">
           <ul className="flex text-xs relative h-[25px] text-neutral-700   items-center ">
-            {/* <li
-              onClick={() => {
-                setState("about");
-                setActive("");
-                setTimeout(() => {
-                  setNotHidden("about");
-                }, 400);
-                setTimeout(() => {
-                  setActive("about");
-                }, 600);
-              }}
-              className="cursor-pointer w-20 text-center"
-            >
-              About
-            </li> */}
             <li
               onClick={() => {
                 setState("work");
@@ -140,9 +112,28 @@ const HomePage = () => {
               Contact
             </li>
 
+            <li
+              onClick={() => {
+                setState("experiments");
+                setActive("");
+                setTimeout(() => {
+                  setNotHidden("experiments");
+                }, 400);
+
+                setTimeout(() => {
+                  setActive("experiments");
+                }, 600);
+              }}
+              className="cursor-pointer w-32 text-center"
+            >
+              Experiments
+            </li>
+
             <div
               className={`${state === "work" && "translate-x-[0px] w-16"} ${
                 state === "contact" && "translate-x-[64px] w-24"
+              } ${
+                state === "experiments" && "translate-x-[160px] w-32"
               } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
             />
           </ul>
@@ -150,13 +141,7 @@ const HomePage = () => {
       </section>
 
       <section className=" h-full lg:w-[50%]  w-full lg:ml-auto">
-        {/* <article
-          className={`${notHidden === "about" ? "flex" : "hidden"} ${
-            active === "about" && "opacity-100"
-          } opacity-0  transition-all  duration-300`}
-        >
-          <AboutCards />
-        </article> */}
+
         <article
           onMouseEnter={() => setshowViewProject(true)}
           onMouseLeave={() => setshowViewProject(false)}
@@ -173,25 +158,18 @@ const HomePage = () => {
         >
           <ContactCard />
         </article>
+
+        <article
+          className={` ${notHidden === "experiments" ? "flex" : "hidden"} ${
+            active === "experiments" && "opacity-100"
+          } opacity-0   transition-all duration-300`}
+        >
+          <ExperimentsCard />
+        </article>
       </section>
 
       <article className="h-14 lg:hidden pb-2  justify-center bg-white z-50 flex items-center bottom-0 fixed w-[91%] mx-auto flex-1  ">
         <ul className="flex text-sm relative   text-neutral-700 w-full  h-full  items-center ">
-          {/* <li
-              onClick={() => {
-                setState("about");
-                setActive("");
-                setTimeout(() => {
-                  setNotHidden("about");
-                }, 400);
-                setTimeout(() => {
-                  setActive("about");
-                }, 600);
-              }}
-              className="cursor-pointer w-full text-center bg-green-"
-            >
-              About
-            </li> */}
           <li
             onClick={() => {
               setState("work");
@@ -226,10 +204,29 @@ const HomePage = () => {
             Contact
           </li>
 
+          <li
+            onClick={() => {
+              setState("experiments");
+              setActive("");
+              setTimeout(() => {
+                setNotHidden("experiments");
+              }, 400);
+
+              setTimeout(() => {
+                setActive("experiments");
+              }, 600);
+            }}
+            className="cursor-pointer w-full text-center bg-green-"
+          >
+            Experiments
+          </li>
+
           <div
-            className={`${state === "work" && "translate-x-[0px] w-[50%]"}   ${
-              state === "contact" && "translate-x-[100%] w-[50%]"
-            } transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
+            className={`${state === "work" && "translate-x-[0px] w-[33%]"}   ${
+              state === "contact" && "translate-x-[100%] w-[33%]"
+            } ${
+              state === "experiments" && "translate-x-[200%] w-[33%]"
+            }  transform  absolute bottom-0  h-[1.5px] rounded-md transition-all duration-1000 bg-black/50`}
           />
         </ul>
       </article>
@@ -238,11 +235,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-// ${
-//   state === "about" && "translate-x-0 w-20"
-// }
-
-// ${
-//   state === "about" && "translate-x-0 w-32"
-// }

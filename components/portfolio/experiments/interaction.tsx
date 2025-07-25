@@ -43,7 +43,7 @@ const Interaction = () => {
               className="object-cover"
             />
           </div>
-          <h3 className="lg:text-[10px] text-xs font-medium">Daniel Rodriguez</h3>
+          <h3 className="lg:text-[10px] text-xs font-medium">Alexander McQueen</h3>
           <div className="flex items-center gap-2 flex-1  justify-end">
             <div
               onClick={() => {
@@ -97,10 +97,10 @@ const Interaction = () => {
             adipisicing elit. Dicta, culpa voluptatibus laborum obcaecati
             accusamus temporibus eligendi vero, numquam, ipsum nobis quam
             quibusdam adipisci minus quasi. Suscipit dolorum,{" "}
-            <span className="text-white font-medium">fuga accusamus</span> iste
+            <span className="text-white font-medium">{" "}fuga accusamus</span> iste
             nihil laboriosam distinctio magni, temporibus blanditiis corporis
             nisi officiis velit rerum.
-            <span className="text-white font-medium">Odio beatae</span> labore
+            <span className="text-white font-medium">{" "}Odio beatae</span> labore
             eveniet, cupiditate reprehenderit dolorum.
           </p>
         </div>

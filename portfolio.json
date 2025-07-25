@@ -19,29 +19,10 @@
       "device": "desktop"
     },
     {
-      "img": ["/morphioPC.png"],
-      "title": "Morphio",
-      "subtitle": "Web",
-      "description": "Dedicated to simplify code conversions for developers across databases, styles, frameworks and more.",
-      "technologies": [
-        "Next.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "Prisma",
-        "Zustand",
-        "React-admin",
-        "Clerk"
-      ],
-      "github": "https://github.com/JustGabo/Morphio",
-      "visit": "https://morphio-phi.vercel.app/",
-      "index": "2",
-      "device": "desktop"
-    },
-    {
-      "img": ["/unityPhone.png"],
+      "img": ["/unityPC.png"],
       "title": "Unity",
       "subtitle": "Map",
-      "description": "Built an End-to-End web application ment to help the collaboration for teammates.",
+      "description": "Built an End-to-End web application meant to help the collaboration for teammates.",
       "technologies": [
         "Next.js",
         "Tailwind CSS",
@@ -53,16 +34,14 @@
       ],
       "github": "https://github.com/JustGabo/UnityMap",
       "visit": "https://unity-map.vercel.app/",
-      "index": "3",
-      "device": "phone"
+      "index": "2",
+      "device": "desktop"
     },
     {
-      "img": [
-        "/stayoFull.png"
-      ],
-      "title": "Stayo",
-      "subtitle": "App",
-      "description": "Web Application that facilitates vacation rentals, connecting property owners with travelers seeking accommodations worldwide.",
+      "img": ["/roqkePC.png"],
+      "title": "Roke",
+      "subtitle": "Web",
+      "description": "This is a replica of a Portfolio Web, made with some improvements and differences. This replica is mainly oriented to the user experience and the little details and interactions with the page, prioritizing website design and performance.",
       "technologies": [
         "Next.js",
         "Tailwind CSS",
@@ -72,29 +51,29 @@
         "Convex",
         "Zustand"
       ],
-      "github": "https://github.com/JustGabo/Stayo",
-      "visit": "https://stayo-rose.vercel.app/",
-      "index": "4",
+      "github": "https://github.com/JustGabo/Roke",
+      "visit": "https://roke.vercel.app/",
+      "index": "3",
       "device": "desktop"
     },
-  
     {
-      "img": ["/oneDayTablet.png"],
-      "title": "Netflix",
-      "subtitle": "Clone",
-      "description": "Proposed myself to build an End-to-End clone of this project with some changes on the UI.",
+      "img": ["/strumlyPC.png"],
+      "title": "Strumly",
+      "subtitle": "Web",
+      "description": "This is an experimental project, made with the intention of thanking the music, and specifically the guitars.",
       "technologies": [
         "Next.js",
         "Tailwind CSS",
         "TypeScript",
-        "Prisma",
+        "Clerk",
+        "LiveBlocks",
+        "Convex",
         "Zustand"
       ],
-      "github": "https://github.com/JustGabo/netflix",
-      "visit": "https://netflix-justgabo.vercel.app/  ",
-      "index": "5",
-      "device": "tablet"
+      "github": "https://github.com/JustGabo/Strumly",
+      "visit": "https://strumly.vercel.app/",
+      "index": "4",
+      "device": "desktop"
     }
-    
   ]
   
